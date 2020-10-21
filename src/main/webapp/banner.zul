@@ -1,0 +1,10 @@
+<div hflex="1">
+    <hbox hflex="1" align="center">
+        <a href="#">
+            <image src="/img/zklogo.png" width="90px"/>
+        </a>
+        <div width="400px">
+            <label value="Staff Management" sclass="banner-head"/>
+        </div>
+    </hbox>
+</div>

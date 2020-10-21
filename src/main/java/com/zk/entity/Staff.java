@@ -8,13 +8,23 @@ public class Staff {
     private String fullName;
     private String password;
     private String email;
-    private boolean gender;
     private Date birthday;
     private String address;
     private String phone;
     private Unit unit;
 
     public Staff() {
+    }
+
+    public Staff(String staffId, String fullName, String password, String email, Date birthday, String address, String phone, Unit unit) {
+        this.staffId = staffId;
+        this.fullName = fullName;
+        this.password = password;
+        this.email = email;
+        this.birthday = birthday;
+        this.address = address;
+        this.phone = phone;
+        this.unit = unit;
     }
 
     public String getStaffId() {
@@ -47,14 +57,6 @@ public class Staff {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public boolean isGender() {
-        return gender;
-    }
-
-    public void setGender(boolean gender) {
-        this.gender = gender;
     }
 
     public Date getBirthday() {

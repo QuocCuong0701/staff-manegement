@@ -1,8 +1,11 @@
+<?link rel="stylesheet" type="text/css" href="/style.css"?>
 <zk>
-	<window apply="org.zkoss.bind.BindComposer"
-		viewModel="@id('vm')@init('com.zk.MyViewModel')"
-		validationMessages="@id('vmsgs')">
-		<hlayout>count: <label value="@load(vm.count)" /></hlayout>
-		<button label="add" onClick="@command('cmd')"/>
-	</window>
+    <borderlayout hflex="1" vflex="1">
+        <north height="100px" border="none" vflex="min">
+            <apply templateURI="/banner.zul"/>
+        </north>
+        <center autoscroll="true" border="none">
+            <apply templateURI="/main-mvvm.zul"/>
+        </center>
+    </borderlayout>
 </zk>

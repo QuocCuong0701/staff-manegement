@@ -1,0 +1,55 @@
+<window viewModel="@id('vm') @init('com.zk.viewmodel.StaffViewModel')"
+        border="normal" hflex="1" vflex="1" contentStyle="overflow:auto">
+    <caption src="/img/todo.png" sclass="fn-caption" label="Staff Management"/>
+    <borderlayout>
+        <center border="none" autoscroll="true">
+            <vlayout hflex="1" vflex="1">
+                <hbox align="center" width="100%" apply="com.zk.controller.ModalDialogController">
+                    <button id="addStaff" image="/img/plus.png"/>
+                </hbox>
+                <listbox model="@bind(vm.staffListModel)" selectedItem="@bind(vm.selectStaff)">
+                    <listhead>
+                        <listheader align="center">Id</listheader>
+                        <listheader align="center">Full Name</listheader>
+                        <listheader>Birthday</listheader>
+                        <listheader align="center">Email</listheader>
+                        <listheader align="center">Phone</listheader>
+                        <listheader>Address</listheader>
+                        <listheader align="center">Unit</listheader>
+                        <listheader align="center">Action</listheader>
+                    </listhead>
+                    <template name="model">
+                        <listitem>
+                            <listcell>
+                                <label value="@bind(each.staffId)"/>
+                            </listcell>
+                            <listcell>
+                                <label value="@bind(each.fullName)"/>
+                            </listcell>
+                            <listcell>
+                                <datebox value="@bind(each.birthday)"/>
+                            </listcell>
+                            <listcell>
+                                <label value="@bind(each.email)"/>
+                            </listcell>
+                            <listcell>
+                                <label value="@bind(each.phone)"/>
+                            </listcell>
+                            <listcell>
+                                <textbox value="@bind(each.address)" hflex="1"/>
+                            </listcell>
+                            <listcell>
+                                <label value="@bind(each.unit.unitName)"/>
+                            </listcell>
+                            <listcell apply="com.zk.controller.ModalDialogController">
+                                <button onClick="@command('deleteStaff', staff=each)" image="/img/cross.png"/>
+                                <button sclass="editStaff" image="/img/pencil.png"/>
+                                <button sclass="infoStaff" image="/img/info.png"/>
+                            </listcell>
+                        </listitem>
+                    </template>
+                </listbox>
+            </vlayout>
+        </center>
+    </borderlayout>
+</window>
