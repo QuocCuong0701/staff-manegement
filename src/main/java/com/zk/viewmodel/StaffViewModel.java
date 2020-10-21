@@ -5,6 +5,7 @@ import com.zk.entity.Unit;
 import com.zk.service.StaffService;
 import com.zk.service.StaffServiceImpl;
 import org.zkoss.bind.BindUtils;
+import org.zkoss.bind.Form;
 import org.zkoss.bind.annotation.BindingParam;
 import org.zkoss.bind.annotation.Command;
 import org.zkoss.bind.annotation.Init;
@@ -44,7 +45,7 @@ public class StaffViewModel {
 
     // Add staff
     @Command
-    @NotifyChange("selectStaff")
+    @NotifyChange({"selectStaff"})
     public void addStaff() {
         selectStaff = staffService.addStaff(selectStaff);
         staffListModel.add(selectStaff);

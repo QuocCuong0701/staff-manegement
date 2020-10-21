@@ -2,39 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70c743a2-25fc-4f65-b32a-7dfeb84a8938" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zk/controller/DialogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zk/controller/ModalDialogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zk/service/StaffService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zk/service/StaffServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zk/viewmodel/StaffViewModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/banner.zul" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/employee_dialog.zul" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/cross.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/demo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/doc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/fn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/info.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/pencil.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/site.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/todo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/zklogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/zklogo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/main-mvvm.zul" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/modal/add-staff.zul" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zk/MyViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zk/entity/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zk/entity/Staff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.zul" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.zul" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zk/MyViewModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zk/controller/ModalDialogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zk/controller/ModalDialogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zk/service/StaffServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zk/service/StaffServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zk/viewmodel/StaffViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zk/viewmodel/StaffViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/employee_dialog.zul" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/modal/add-staff.zul" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/modal/add-staff.zul" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zk/controller/ModalDialogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zk/controller/ModalDialogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zk/service/StaffServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zk/service/StaffServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zk/viewmodel/StaffViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zk/viewmodel/StaffViewModel.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +31,9 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="staffmanagement" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -82,7 +61,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
@@ -92,8 +71,8 @@
       <recent name="D:\IdeaProjects\staff-management\src\main\webapp\apply" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\staff-management\src\main\webapp\img" />
       <recent name="D:\IdeaProjects\staff-management\src\main\webapp" />
+      <recent name="D:\IdeaProjects\staff-management\src\main\webapp\img" />
       <recent name="D:\IdeaProjects\staff-management\src\main\webapp\WEB-INF" />
     </key>
   </component>
@@ -146,7 +125,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603246926450</updated>
-      <workItem from="1603246927809" duration="22761000" />
+      <workItem from="1603246927809" duration="29689000" />
     </task>
     <servers />
   </component>
@@ -169,28 +148,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zk/viewmodel/StaffViewModel.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zk/service/StaffServiceImpl.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zk/viewmodel/StaffViewModel.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zk/service/StaffServiceImpl.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zk/viewmodel/StaffViewModel.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="12" />
+          <line>52</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

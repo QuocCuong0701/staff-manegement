@@ -18,7 +18,7 @@ public class StaffServiceImpl implements StaffService {
         unitList.add(new Unit("Tuyển dụng", "TD", "Phòng Nhân sự"));
         unitList.add(new Unit("CNTT", "IT", "Phòng CNTT"));
         staffList.add(new Staff("S1", "Jonh Wick", "1234", "john@gmail.com", null, "USA", "0123456789", unitList.get(0)));
-        staffList.add(new Staff("S2", "Emma Watson", "1234", "emma@gmail.com", dayAfter(-12000), "UK", "0123456789", unitList.get(1)));
+        staffList.add(new Staff("S2", "Emma Watson", "1234", "emma@gmail.com", dayAfter(-9400), "UK", "0123456789", unitList.get(1)));
         staffList.add(new Staff("S3", "Putin", "1234", "putin@gmail.com", dayAfter(-10000), "Russia", "0123456789", unitList.get(2)));
     }
 
@@ -43,8 +43,12 @@ public class StaffServiceImpl implements StaffService {
     // Add new staff
     @Override
     public Staff addStaff(Staff staff) {
-        staffList.add(staff);
-        return staff;
+        if (staff.getStaffId() == null) {
+            throw new IllegalArgumentException("Staff id must not be null.");
+        } else {
+            staffList.add(staff);
+            return staff;
+        }
     }
 
     // Edit staff

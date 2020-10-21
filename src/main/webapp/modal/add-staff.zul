@@ -1,15 +1,15 @@
 <window viewModel="@id('vm') @init('com.zk.viewmodel.StaffViewModel')"
         id="modalDialog" title="Add New Staff" border="normal" width="900px"
-        apply="com.zk.controller.DialogController"
         position="center,center" closable="true"
         action="show: slideDown;hide: slideUp" contentStyle="overflow:auto">
-    <vlayout visible="@bind(not empty vm.selectStaff)">
+    <vlayout>
+        <!--form="@id('fx') @load(vm.selectStaff) @save(vm.selectStaff, before='addStaff')"-->
         <grid form="@id('fx') @load(vm.selectStaff) @save(vm.selectStaff, before='addStaff')">
             <columns>
                 <column hflex="min" align="right"/>
                 <column/>
             </columns>
-            <rows>
+            <!--<rows>
                 <row>
                     <cell>Id:</cell>
                     <cell>
@@ -56,9 +56,47 @@
                         </listbox>
                     </cell>
                 </row>
+            </rows>-->
+            <rows>
+                <row>
+                    <cell>Id:</cell>
+                    <cell>
+                        <textbox value="@bind(fx.staffId)"/>
+                    </cell>
+                </row>
+                <row>
+                    <cell>Full Name:</cell>
+                    <cell>
+                        <textbox value="@bind(fx.fullName)"/>
+                    </cell>
+                </row>
+                <!--<row>
+                    <cell>Birthday:</cell>
+                    <cell>
+                        <datebox value="@bind(fx.birthday)"/>
+                    </cell>
+                </row>
+                <row>
+                    <cell>Email:</cell>
+                    <cell>
+                        <textbox value="@bind(fx.email)"/>
+                    </cell>
+                </row>
+                <row>
+                    <cell>Phone:</cell>
+                    <cell>
+                        <textbox value="@bind(fx.phone)"/>
+                    </cell>
+                </row>
+                <row>
+                    <cell>Address:</cell>
+                    <cell>
+                        <textbox value="@bind(fx.address)"/>
+                    </cell>
+                </row>-->
             </rows>
         </grid>
-        <hlayout>
+        <hlayout apply="com.zk.controller.DialogController">
             <button onClick="@command('addStaff')" label="Save"/>
             <button id="closeBtn" label="Cancel"/>
         </hlayout>
