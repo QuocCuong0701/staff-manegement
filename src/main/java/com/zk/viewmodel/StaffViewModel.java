@@ -20,6 +20,7 @@ public class StaffViewModel {
     private ListModelList<Staff> staffListModel;
     private ListModelList<Unit> unitListModel;
     private Staff selectStaff;
+    private Staff newStaff;
 
     public ListModelList<Staff> getStaffListModel() {
         return staffListModel;
@@ -37,6 +38,14 @@ public class StaffViewModel {
         this.selectStaff = selectStaff;
     }
 
+    public Staff getNewStaff() {
+        return newStaff;
+    }
+
+    public void setNewStaff(Staff newStaff) {
+        this.newStaff = newStaff;
+    }
+
     @Init
     public void init() {
         staffListModel = new ListModelList<>(staffService.getStaffList());
@@ -45,7 +54,7 @@ public class StaffViewModel {
 
     // Add staff
     @Command
-    @NotifyChange({"selectStaff"})
+    @NotifyChange("selectStaff")
     public void addStaff() {
         selectStaff = staffService.addStaff(selectStaff);
         staffListModel.add(selectStaff);

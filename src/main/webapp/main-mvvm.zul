@@ -36,7 +36,7 @@
                                 <label value="@bind(each.phone)"/>
                             </listcell>
                             <listcell>
-                                <textbox value="@bind(each.address)" hflex="1"/>
+                                <textbox value="@bind(each.address)" hflex="1" disabled="true"/>
                             </listcell>
                             <listcell>
                                 <label value="@bind(each.unit.unitName)"/>

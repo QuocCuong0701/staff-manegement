@@ -2,9 +2,9 @@
         id="modalDialog" title="Add New Staff" border="normal" width="900px"
         position="center,center" closable="true"
         action="show: slideDown;hide: slideUp" contentStyle="overflow:auto">
-    <vlayout>
+    <vlayout visible="@bind(not empty vm.selectStaff)">
         <!--form="@id('fx') @load(vm.selectStaff) @save(vm.selectStaff, before='addStaff')"-->
-        <grid form="@id('fx') @load(vm.selectStaff) @save(vm.selectStaff, before='addStaff')">
+        <grid form="@id('fx') @bind(vm.selectStaff) @save(vm.selectStaff, before='addStaff')">
             <columns>
                 <column hflex="min" align="right"/>
                 <column/>
@@ -96,9 +96,9 @@
                 </row>-->
             </rows>
         </grid>
-        <hlayout apply="com.zk.controller.DialogController">
+        <hlayout >
             <button onClick="@command('addStaff')" label="Save"/>
-            <button id="closeBtn" label="Cancel"/>
+            <button apply="com.zk.controller.DialogController" id="closeBtn" label="Cancel"/>
         </hlayout>
     </vlayout>
 </window>
