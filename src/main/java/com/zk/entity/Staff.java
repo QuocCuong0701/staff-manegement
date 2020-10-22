@@ -1,6 +1,7 @@
 package com.zk.entity;
 
 import java.util.Date;
+import java.util.Objects;
 
 public class Staff {
 
@@ -89,5 +90,18 @@ public class Staff {
 
     public void setUnit(Unit unit) {
         this.unit = unit;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Staff staff = (Staff) o;
+        return Objects.equals(staffId, staff.staffId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(staffId);
     }
 }

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70c743a2-25fc-4f65-b32a-7dfeb84a8938" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/main/webapp/modal/edit-staff.zul" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zk/controller/ModalDialogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zk/controller/ModalDialogController.java" afterDir="false" />
@@ -13,7 +14,18 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/zk/controller/ModalDialogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zk/controller/ModalDialogController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zk/service/StaffService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zk/service/StaffService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zk/service/StaffServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zk/service/StaffServiceImpl.class" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zk/entity/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zk/entity/Staff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zk/viewmodel/StaffViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zk/viewmodel/StaffViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/main-mvvm.zul" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main-mvvm.zul" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/modal/add-staff.zul" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/modal/add-staff.zul" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zk/entity/Staff.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zk/entity/Staff.class" afterDir="false" />
+>>>>>>> 73f11c70d1be147425c8b42d7ad4880e06e6b112
       <change beforePath="$PROJECT_DIR$/target/classes/com/zk/viewmodel/StaffViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zk/viewmodel/StaffViewModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +76,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/modal" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> 73f11c70d1be147425c8b42d7ad4880e06e6b112
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
@@ -129,9 +145,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603246926450</updated>
+<<<<<<< HEAD
       <workItem from="1603246927809" duration="29728000" />
       <workItem from="1603331942137" duration="9776000" />
       <workItem from="1603353249466" duration="837000" />
+=======
+      <workItem from="1603246927809" duration="29689000" />
+      <workItem from="1603287804631" duration="2868000" />
+>>>>>>> 73f11c70d1be147425c8b42d7ad4880e06e6b112
     </task>
     <servers />
   </component>
@@ -151,4 +172,18 @@
       </map>
     </option>
   </component>
+<<<<<<< HEAD
+=======
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zk/viewmodel/StaffViewModel.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+>>>>>>> 73f11c70d1be147425c8b42d7ad4880e06e6b112
 </project>

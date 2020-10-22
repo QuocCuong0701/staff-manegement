@@ -60,9 +60,9 @@
                 </row>
             </rows>
         </grid>
-        <hlayout apply="com.zk.controller.DialogController">
+        <hlayout >
             <button onClick="@command('addStaff')" label="Save"/>
-            <button id="closeBtn" label="Cancel"/>
+            <button apply="com.zk.controller.DialogController" id="closeBtn" label="Cancel"/>
         </hlayout>
     </vlayout>
 </window>

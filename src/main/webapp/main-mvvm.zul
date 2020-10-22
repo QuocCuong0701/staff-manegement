@@ -43,7 +43,6 @@
                             </listcell>
                             <listcell apply="com.zk.controller.ModalDialogController">
                                 <button onClick="@command('deleteStaff', staff=each)" image="/img/cross.png"/>
-                                <!--<button onClick="@command('getStaffId', staffId=each.staffId)" sclass="editStaff" image="/img/pencil.png"/>-->
                             </listcell>
                         </listitem>
                     </template>
