@@ -21,35 +21,99 @@
                     <template name="model">
                         <listitem>
                             <listcell>
-                                <label value="@bind(each.staffId)"/>
+                                <label value="@load(each.staffId)"/>
                             </listcell>
                             <listcell>
-                                <label value="@bind(each.fullName)"/>
+                                <label value="@load(each.fullName)"/>
                             </listcell>
                             <listcell>
-                                <datebox value="@bind(each.birthday)"/>
+                                <datebox value="@load(each.birthday)"/>
                             </listcell>
                             <listcell>
-                                <label value="@bind(each.email)"/>
+                                <label value="@load(each.email)"/>
                             </listcell>
                             <listcell>
-                                <label value="@bind(each.phone)"/>
+                                <label value="@load(each.phone)"/>
                             </listcell>
                             <listcell>
-                                <textbox value="@bind(each.address)" hflex="1"/>
+                                <textbox value="@load(each.address)" hflex="1"/>
                             </listcell>
                             <listcell>
-                                <label value="@bind(each.unit.unitName)"/>
+                                <label value="@load(each.unit.unitName)"/>
                             </listcell>
                             <listcell apply="com.zk.controller.ModalDialogController">
                                 <button onClick="@command('deleteStaff', staff=each)" image="/img/cross.png"/>
-                                <button sclass="editStaff" image="/img/pencil.png"/>
-                                <button sclass="infoStaff" image="/img/info.png"/>
+                                <!--<button onClick="@command('getStaffId', staffId=each.staffId)" sclass="editStaff" image="/img/pencil.png"/>-->
                             </listcell>
                         </listitem>
                     </template>
                 </listbox>
             </vlayout>
         </center>
+        <east visible="@bind(not empty vm.selectStaff)" width="400px" border="none" collapsible="false"
+              splittable="true" minsize="300" autoscroll="true">
+            <vlayout visible="@bind(not empty vm.selectStaff)">
+                <grid form="@id('fx') @load(vm.selectStaff) @save(vm.selectStaff, before='updateStaff')">
+                    <columns>
+                        <column hflex="min" align="right"/>
+                        <column/>
+                    </columns>
+                    <rows>
+                        <row>
+                            <cell>Id:</cell>
+                            <cell>
+                                <textbox value="@bind(fx.staffId)" constraint="no empty: Please enter staff id."/>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>Full Name:</cell>
+                            <cell>
+                                <textbox value="@bind(fx.fullName)" constraint="no empty: Please enter full name."/>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>Birthday:</cell>
+                            <cell>
+                                <datebox value="@bind(fx.birthday)" constraint="no future"/>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>Email:</cell>
+                            <cell>
+                                <textbox value="@bind(fx.email)" constraint="/.+@.+\.[a-z]+/: Please enter email."/>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>Phone:</cell>
+                            <cell>
+                                <textbox value="@bind(fx.phone)" constraint="no empty: Please enter phone number."/>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>Address:</cell>
+                            <cell>
+                                <textbox value="@bind(fx.address)" constraint="no empty: Please enter address."/>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>Unit:</cell>
+                            <cell>
+                                <listbox mold="select" model="@load(vm.unitListModel)" selectedItem="@bind(vm.unit)"
+                                         width="200px">
+                                    <template name="model">
+                                        <listitem>
+                                            <listcell label="@load(each.unitName)"/>
+                                        </listitem>
+                                    </template>
+                                </listbox>
+                            </cell>
+                        </row>
+                    </rows>
+                </grid>
+                <hlayout>
+                    <button onClick="@command('updateStaff')" label="Update"/>
+                </hlayout>
+            </vlayout>
+        </east>
     </borderlayout>
 </window>

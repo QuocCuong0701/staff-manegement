@@ -39,6 +39,16 @@ public class StaffServiceImpl implements StaffService {
         return new ArrayList<>(unitList);
     }
 
+    @Override
+    public Staff findById(String id) {
+        for (Staff s : staffList) {
+            if (id.equals(s.getStaffId())) {
+                return s;
+            }
+        }
+        return null;
+    }
+
 
     // Add new staff
     @Override

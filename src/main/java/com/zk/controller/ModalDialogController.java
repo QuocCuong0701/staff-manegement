@@ -16,7 +16,7 @@ public class ModalDialogController extends SelectorComposer<Component> {
 
     @Listen("onClick = .editStaff")
     public void showEditStaffModal() {
-        Window window = (Window) Executions.createComponents("", null, null);
+        Window window = (Window) Executions.createComponents("/modal/edit-staff.zul", null, null);
         window.doModal();
     }
 

@@ -11,6 +11,8 @@ public interface StaffService {
 
     List<Unit> getUnitList();
 
+    Staff findById(String id);
+
     Staff addStaff(Staff staff);
 
     Staff updateStaff(Staff staff);

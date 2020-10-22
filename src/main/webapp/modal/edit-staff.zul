@@ -1,9 +1,10 @@
 <window viewModel="@id('vm') @init('com.zk.viewmodel.StaffViewModel')"
-        id="modalDialog" title="Add New Staff" border="normal" width="900px"
+        id="modalDialog" title="Edit Staff" border="normal" width="900px"
         position="center,center" closable="true"
         action="show: slideDown;hide: slideUp" contentStyle="overflow:auto">
     <vlayout>
-        <grid form="@id('fx') @load(vm.selectStaff) @save(vm.selectStaff, before='addStaff')">
+        <!--<grid form="@id('fx') @load(vm.selectStaff) @save(vm.selectStaff, before='updateStaff')">-->
+        <grid form="@id('fx') @load(vm.selectStaff)">
             <columns>
                 <column hflex="min" align="right"/>
                 <column/>
@@ -12,37 +13,37 @@
                 <row>
                     <cell>Id:</cell>
                     <cell>
-                        <textbox value="@bind(fx.staffId)" constraint="no empty: Please enter staff id."/>
+                        <textbox value="@load(fx.staffId)" constraint="no empty: Please enter staff id."/>
                     </cell>
                 </row>
                 <row>
                     <cell>Full Name:</cell>
                     <cell>
-                        <textbox value="@bind(fx.fullName)" constraint="no empty: Please enter full name."/>
+                        <textbox value="@load(fx.fullName)" constraint="no empty: Please enter full name."/>
                     </cell>
                 </row>
                 <row>
                     <cell>Birthday:</cell>
                     <cell>
-                        <datebox value="@bind(fx.birthday)" constraint="no future"/>
+                        <datebox value="@load(fx.birthday)" constraint="no future"/>
                     </cell>
                 </row>
                 <row>
                     <cell>Email:</cell>
                     <cell>
-                        <textbox value="@bind(fx.email)" constraint="/.+@.+\.[a-z]+/: Please enter email."/>
+                        <textbox value="@load(fx.email)" constraint="/.+@.+\.[a-z]+/: Please enter email."/>
                     </cell>
                 </row>
                 <row>
                     <cell>Phone:</cell>
                     <cell>
-                        <textbox value="@bind(fx.phone)" constraint="no empty: Please enter phone number."/>
+                        <textbox value="@load(fx.phone)" constraint="no empty: Please enter phone number."/>
                     </cell>
                 </row>
                 <row>
                     <cell>Address:</cell>
                     <cell>
-                        <textbox value="@bind(fx.address)" constraint="no empty: Please enter address."/>
+                        <textbox value="@load(fx.address)" constraint="no empty: Please enter address."/>
                     </cell>
                 </row>
                 <row>
@@ -61,7 +62,7 @@
             </rows>
         </grid>
         <hlayout apply="com.zk.controller.DialogController">
-            <button onClick="@command('addStaff')" label="Save"/>
+            <button onClick="@command('updateStaff')" label="Update"/>
             <button id="closeBtn" label="Cancel"/>
         </hlayout>
     </vlayout>
